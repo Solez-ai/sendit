@@ -1,20 +1,43 @@
-## SendIT
+<h2 align="center">
+  <b>SendIT</b><br>
+  <img src="https://i.postimg.cc/6qFyJdCb/logo.png" width="80" alt="SendIT Logo"><br><br>
+  <i>Fast, simple, secure file sharing up to 10GB — no signup, no email, no phone number.</i>
+</h2>
 
-Fast, simple, secure file sharing. Send files up to 10GB using a one-time code — no signup, no email, no phone number.
+---
+<h2 align="center">🛠️ Built With</h2>
 
-### Features
-- **Instant sharing**: Upload and share with a short code.
-- **Up to 10GB**: Large transfers without hassles.
-- **Optional protection**: Support for password-protected transfers.
-- **Auto-cleanup**: Temporary storage with automatic expiry.
-- **PWA**: Installable on desktop and mobile.
+<p align="center">
+  <a href="https://react.dev/"><img src="https://skillicons.dev/icons?i=react" width="40"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://skillicons.dev/icons?i=typescript" width="40"></a>
+  <a href="https://vitejs.dev/"><img src="https://skillicons.dev/icons?i=vite" width="40"></a>
+  <a href="https://tailwindcss.com/"><img src="https://skillicons.dev/icons?i=tailwind" width="40"></a>
+  <a href="https://supabase.com/"><img src="https://skillicons.dev/icons?i=supabase" width="40"></a>
+  <a href="https://developer.android.com/"><img src="https://skillicons.dev/icons?i=androidstudio" width="40"></a>
+  <a href="https://pwa.dev/"><img src="https://i.postimg.cc/dQ6bHsJF/161-1612623-community-introduced-and-widely-adopted-pwa-logo-progressive-Photoroom.png" width="90"></a>
+</p>
 
-### Tech stack
-- **Frontend**: React, TypeScript, Vite
-- **UI**: Tailwind CSS, shadcn/ui
-- **Data/Storage**: Supabase
-- **PWA**: Web App Manifest + Service Worker
-- **Android**: Trusted Web Activity (TWA)
+---
+
+### ✨ Features
+- ⚡ **Instant Sharing** — Upload and share files with a short one-time code  
+- 📦 **Up to 10GB** — Large transfers made easy  
+- 🔐 **Optional Protection** — Password-protected transfers  
+- ⏱ **Auto-Cleanup** — Temporary storage with expiry  
+- 📱 **PWA-Ready** — Installable on desktop and mobile  
+
+---
+
+### 🧠 Tech Stack
+| Layer | Technologies |
+|:------|:--------------|
+| **Frontend** | React, TypeScript, Vite |
+| **UI/UX** | Tailwind CSS, shadcn/ui |
+| **Backend / Storage** | Supabase (Storage + Auth) |
+| **PWA** | Web App Manifest + Service Worker |
+| **Android** | Trusted Web Activity (TWA) |
+
+---
 
 ### Getting started
 1. Clone the repo and install dependencies:
@@ -51,5 +74,5 @@ The Android wrapper opens the web app in a Trusted Web Activity. The configured 
 If you change the production domain, update these values accordingly and rebuild the Android project.
 
 ### License
-Proprietary – all rights reserved.
+Open Source (MIT License)
 
