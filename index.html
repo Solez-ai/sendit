@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO & App Info -->
+    <title>SendIT - Share Files Instantly</title>
+    <meta name="description" content="Share files up to 10GB instantly with a simple code. No signup, no email, no phone number required. Secure file sharing made easy." />
+    <meta name="author" content="Samin Yeasar" />
+    <meta name="theme-color" content="#00b4d8" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Manifest & PWA Setup -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icon-192x192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SendIT" />
+    <meta name="application-name" content="SendIT" />
+
+    <!-- PWA Color for mobile status bar -->
+    <meta name="theme-color" content="#0d1117" />
+
+    <!-- Fallback colors -->
+    <meta name="msapplication-TileColor" content="#00b4d8" />
+  </head>
+
+  <body style="background-color: #0d1117; color: white; font-family: 'Space Mono', monospace;">
+    <div id="root"></div>
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then(() => console.log("✅ Service Worker Registered"))
+            .catch((err) => console.log("❌ Service Worker Failed:", err));
+        });
+      }
+    </script>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
