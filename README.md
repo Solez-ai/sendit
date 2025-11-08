@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ## SendIT
-=======
-## SendIT !
->>>>>>> f528eea (fixing readme)
 
 Fast, simple, secure file sharing. Send files up to 10GB using a one-time code — no signup, no email, no phone number.
 
