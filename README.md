@@ -1,73 +1,55 @@
-# Welcome to your Lovable project
+## SendIT
 
-## Project info
+Fast, simple, secure file sharing. Send files up to 10GB using a one-time code — no signup, no email, no phone number.
 
-**URL**: https://lovable.dev/projects/cf048f77-f021-40bd-9c47-12f5f333a4f9
+### Features
+- **Instant sharing**: Upload and share with a short code.
+- **Up to 10GB**: Large transfers without hassles.
+- **Optional protection**: Support for password-protected transfers.
+- **Auto-cleanup**: Temporary storage with automatic expiry.
+- **PWA**: Installable on desktop and mobile.
 
-## How can I edit this code?
+### Tech stack
+- **Frontend**: React, TypeScript, Vite
+- **UI**: Tailwind CSS, shadcn/ui
+- **Data/Storage**: Supabase
+- **PWA**: Web App Manifest + Service Worker
+- **Android**: Trusted Web Activity (TWA)
 
-There are several ways of editing your application.
+### Getting started
+1. Clone the repo and install dependencies:
+   ```bash
+   npm install
+   ```
+2. Create a `.env` file in `sendit/` with:
+   ```bash
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_anon_key
+   ```
+3. Start the dev server:
+   ```bash
+   npm run dev
+   ```
 
-**Use Lovable**
+### Scripts
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run preview`: Preview the production build
+- `npm run lint`: Lint the project
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cf048f77-f021-40bd-9c47-12f5f333a4f9) and start prompting.
+### PWA
+- Manifest: `public/manifest.json`
+- Service worker: `public/service-worker.js`
+- The app is installable; ensure HTTPS in production.
 
-Changes made via Lovable will be committed automatically to this repo.
+### Android (TWA)
+The Android wrapper opens the web app in a Trusted Web Activity. The configured host is `sendit-now.vercel.app`. Key files:
+- `app/build.gradle` (hostName, manifest URLs)
+- `twa-manifest.json` (host, iconUrl, webManifestUrl, fullScopeUrl)
+- `app/src/main/res/values/strings.xml` (Digital Asset Links)
 
-**Use your preferred IDE**
+If you change the production domain, update these values accordingly and rebuild the Android project.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### License
+Proprietary – all rights reserved.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/cf048f77-f021-40bd-9c47-12f5f333a4f9) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

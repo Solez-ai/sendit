@@ -1,6 +1,6 @@
 {
   "packageId": "app.vercel.sendit_try.twa",
-  "host": "sendit-try.vercel.app",
+  "host": "sendit-now.vercel.app",
   "name": "SendIT",
   "launcherName": "SendIT",
   "display": "standalone",
@@ -13,7 +13,7 @@
   "backgroundColor": "#212121",
   "enableNotifications": true,
   "startUrl": "/",
-  "iconUrl": "https://sendit-try.vercel.app/icon-512x512.png",
+  "iconUrl": "https://sendit-now.vercel.app/icon-512x512.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "C:\\Projects\\SendIT\\sendit-instant-share\\android.keystore",
@@ -23,7 +23,7 @@
   "appVersionCode": 1,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
-  "webManifestUrl": "https://sendit-try.vercel.app/manifest.json",
+  "webManifestUrl": "https://sendit-now.vercel.app/manifest.json",
   "fallbackType": "customtabs",
   "features": {},
   "alphaDependencies": {
@@ -32,7 +32,7 @@
   "enableSiteSettingsShortcut": true,
   "isChromeOSOnly": false,
   "isMetaQuest": false,
-  "fullScopeUrl": "https://sendit-try.vercel.app/",
+  "fullScopeUrl": "https://sendit-now.vercel.app/",
   "minSdkVersion": 21,
   "orientation": "any",
   "fingerprints": [],
