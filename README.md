@@ -1,4 +1,4 @@
-## SendIT
+## SendIT ![image](sendit\public\icon-512x512.png)
 
 Fast, simple, secure file sharing. Send files up to 10GB using a one-time code — no signup, no email, no phone number.
 
